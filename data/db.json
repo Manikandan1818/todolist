@@ -3,17 +3,22 @@
     {
       "id": 1,
       "checked": true,
-      "item": "Practice Coading"
+      "item": "MERN STACK"
     },
     {
       "id": 2,
       "checked": true,
-      "item": "Mern"
+      "item": "FULL Stack"
     },
     {
       "id": 3,
       "checked": false,
-      "item": "Full"
+      "item": "React JS"
+    },
+    {
+      "id": 4,
+      "checked": false,
+      "item": "Node JS"
     }
   ]
 }
