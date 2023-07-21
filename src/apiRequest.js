@@ -1,8 +1,11 @@
 import React from "react";
 
-const apiRequest = (url, objectOpts = null, errMsg = null) => {
+const apiRequest = async (url, objectOpts = null, errMsg = null) => {
   try {
-  } catch (error) {}
+    const res = await fetch(url, objectOpts);
+  } catch (error) {
+    errMsg = error;
+  }
 };
 
 export default apiRequest;
