@@ -1,10 +1,11 @@
-import React from "react";
-
-const apiRequest = async (url, objectOpts = null, errMsg = null) => {
+const apiRequest = async (url = "", optionsObj = null, errMsg = null) => {
   try {
-    const res = await fetch(url, objectOpts);
+    const res = await fetch(url, optionsObj);
+    if (!res.ok) throw Error("Please reload the app!");
   } catch (error) {
-    errMsg = error;
+    errMsg = error.Message;
+  } finally {
+    return errMsg;
   }
 };
 

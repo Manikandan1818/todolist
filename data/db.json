@@ -11,14 +11,14 @@
       "item": "FULL Stack"
     },
     {
-      "id": 3,
-      "checked": false,
-      "item": "React JS"
-    },
-    {
       "id": 4,
       "checked": false,
       "item": "Node JS"
+    },
+    {
+      "id": 5,
+      "checked": true,
+      "item": "React Developer"
     }
   ]
 }
