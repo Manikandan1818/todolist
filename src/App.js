@@ -79,9 +79,10 @@ function App() {
     const deleteOptions = {
       method: "DELETE",
     };
-    const reqUrl = `${API_URL}/${id}`;
 
-    const result = await apiRequest(reqUrl, deleteOptions);
+    const reqURL = `${API_URL}/${id}`;
+
+    const result = await apiRequest(reqURL, deleteOptions);
     if (result) setFetchError(result);
   };
 
